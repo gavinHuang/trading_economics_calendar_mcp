@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "trading-economics-calendar-mcp"
 version = "0.1.0"
 description = "MCP server for fetching trading economics calendar events"
-authors = [{name = "Assistant", email = "assistant@example.com"}]
+authors = [{name = "Gavin Huang", email = "gavin@example.com"}]
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -38,8 +38,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/username/trading-economics-calendar-mcp"
-Repository = "https://github.com/username/trading-economics-calendar-mcp"
+Homepage = "https://github.com/gavinHuang/trading_economics_calendar_mcp"
+Repository = "https://github.com/gavinHuang/trading_economics_calendar_mcp"
 
 [project.scripts]
 trading-economics-mcp = "trading_economics_calendar.server:main"
