@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "trading-economics-calendar": {
+      "command": "trading-economics-mcp",
+      "env": {},
+      "args": []
+    }
+  }
+}

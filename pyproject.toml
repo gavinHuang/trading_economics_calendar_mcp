@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trading-economics-calendar-mcp"
+version = "0.1.0"
+description = "MCP server for fetching trading economics calendar events"
+authors = [{name = "Assistant", email = "assistant@example.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "fastmcp>=0.1.0",
+    "requests>=2.25.0",
+    "beautifulsoup4>=4.9.0",
+    "lxml>=4.6.0",
+    "python-dateutil>=2.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-asyncio>=0.18.0",
+    "black>=21.0.0",
+    "flake8>=3.8.0",
+    "mypy>=0.800",
+]
+
+[project.urls]
+Homepage = "https://github.com/username/trading-economics-calendar-mcp"
+Repository = "https://github.com/username/trading-economics-calendar-mcp"
+
+[project.scripts]
+trading-economics-mcp = "trading_economics_calendar.server:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["trading_economics_calendar*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
